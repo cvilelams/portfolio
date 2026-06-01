@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carolina Vilela — Product Designer</title>
+  <meta name="description" content="Product designer focused on systems, outcomes, and measurable impact.">
+  <link rel="stylesheet" href="css/design-system.css?v=2">
+  <style>
+    .hero-cta { display: flex; gap: 24px; align-items: center; margin-top: 40px; }
+    .hero-initials {
+      font-family: var(--font-display);
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--ink-faint);
+      letter-spacing: -0.02em;
+    }
+    .project-metric-muted {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--ink-faint);
+    }
+    .about-left .t-body { margin-top: 16px; }
+    .about-left .btn-ghost { margin-top: 24px; display: inline-block; }
+    .experience { padding-bottom: var(--sp-6); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Carolina Vilela</a>
+    <div class="nav-links">
+      <a href="#work" class="active">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div>
+        <p class="hero-tag">Product Designer · Systems &amp; Outcomes</p>
+        <h1 class="t-hero">
+          I'm Carolina,<br>
+          <em>I design for<br>real outcomes.</em>
+        </h1>
+        <p class="hero-sub">
+          I partner with product and engineering teams to turn complex workflows into
+          clear interfaces — with research, systems thinking, and metrics that prove impact.
+        </p>
+      </div>
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary">Selected work</a>
+        <a href="contact.html" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <aside class="hero-right">
+      <div class="hero-photo-wrap" aria-label="Profile photo placeholder">
+        <span class="hero-initials">CV</span>
+      </div>
+      <dl class="hero-meta">
+        <div class="hero-meta-item">
+          <dt class="t-label">Status</dt>
+          <dd class="t-meta">Open to roles</dd>
+        </div>
+        <div class="hero-meta-item">
+          <dt class="t-label">Role</dt>
+          <dd class="t-meta">Senior Product Designer</dd>
+        </div>
+        <div class="hero-meta-item">
+          <dt class="t-label">Location</dt>
+          <dd class="t-meta">Brazil · Remote</dd>
+        </div>
+        <div class="hero-meta-item">
+          <dt class="t-label">Focus</dt>
+          <dd class="t-meta">B2B · Ops · Design systems</dd>
+        </div>
+      </dl>
+    </aside>
+  </section>
+
+  <header class="section-header" id="work">
+    <span class="section-title t-label">Selected Work</span>
+    <span class="t-meta">02 projects</span>
+  </header>
+
+  <div class="projects-grid">
+    <a href="work/batch-printing.html" class="project-card">
+      <div class="project-thumbnail" aria-hidden="true"></div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Product design</span>
+          <span class="tag">Workflow</span>
+        </div>
+        <h2 class="t-project-title">Batch Printing</h2>
+        <p class="project-desc">
+          Redesigned a high-volume print workflow for warehouse operators — fewer steps,
+          clearer status, and faster batch completion.
+        </p>
+        <div class="project-footer">
+          <span class="project-metric">28s → 12s avg. batch time</span>
+          <span class="project-arrow" aria-hidden="true">→</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="work/expired-tags-research.html" class="project-card">
+      <div class="project-thumbnail" aria-hidden="true"></div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Research</span>
+          <span class="tag">Service design</span>
+        </div>
+        <h2 class="t-project-title">Expired Tags Research</h2>
+        <p class="project-desc">
+          Discovery sprint on label expiration errors — mapped root causes and proposed
+          a phased fix aligned with ops constraints.
+        </p>
+        <div class="project-footer">
+          <span class="project-metric-muted">−40% support tickets (pilot)</span>
+          <span class="project-arrow" aria-hidden="true">→</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <header class="section-header" id="experience">
+    <span class="section-title t-label">Experience</span>
+    <span class="t-meta">Recent roles</span>
+  </header>
+
+  <section class="experience">
+    <article class="exp-row">
+      <p class="exp-period">Sep 2025 — Present</p>
+      <div>
+        <h3 class="t-exp-role">Senior Product Designer</h3>
+        <p class="exp-company">Company Name · Product</p>
+        <p class="exp-desc">
+          Lead design for internal ops tools — discovery, prototyping, and design-system
+          contributions with eng partners.
+        </p>
+      </div>
+      <span class="exp-badge">Current</span>
+    </article>
+
+    <article class="exp-row">
+      <p class="exp-period">2022 — 2025</p>
+      <div>
+        <h3 class="t-exp-role">Product Designer</h3>
+        <p class="exp-company">Previous Company · SaaS</p>
+        <p class="exp-desc">
+          Shipped end-to-end features across web and mobile; established research rituals
+          and component documentation for the squad.
+        </p>
+      </div>
+      <span class="t-meta" style="text-align: right; padding-top: 3px;">—</span>
+    </article>
+
+    <article class="exp-row">
+      <p class="exp-period">2019 — 2022</p>
+      <div>
+        <h3 class="t-exp-role">UX Designer</h3>
+        <p class="exp-company">Agency / Studio</p>
+        <p class="exp-desc">
+          Client-facing work across fintech and retail — wireframes, usability tests,
+          and handoff specs for dev teams.
+        </p>
+      </div>
+      <span class="t-meta" style="text-align: right; padding-top: 3px;">—</span>
+    </article>
+  </section>
+
+  <section class="about-strip">
+    <div class="about-left">
+      <span class="t-label">About</span>
+      <p class="t-body" style="margin-top: 16px;">
+        I'm a product designer who cares as much about the system behind the UI as the
+        pixels on screen. I work best where ambiguity is high and outcomes need to be
+        measured — not just shipped.
+      </p>
+      <a href="about.html" class="btn-ghost">Read full story</a>
+    </div>
+    <div class="about-right">
+      <span class="t-label">Core skills</span>
+      <div class="skills-grid" style="margin-top: 16px;">
+        <div class="skill-item">
+          <span class="skill-dot" aria-hidden="true"></span>
+          <span class="skill-name">Product discovery</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot" aria-hidden="true"></span>
+          <span class="skill-name">Design systems</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot" aria-hidden="true"></span>
+          <span class="skill-name">UX research</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot" aria-hidden="true"></span>
+          <span class="skill-name">Prototyping</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot" aria-hidden="true"></span>
+          <span class="skill-name">Data-informed design</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-dot" aria-hidden="true"></span>
+          <span class="skill-name">Cross-functional leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer-copy">© 2026 Carolina Vilela</span>
+    <div class="footer-links">
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+  </footer>
+
+</body>
+</html>

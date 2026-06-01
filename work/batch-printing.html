@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batch Printing — Carolina Vilela</title>
+  <link rel="stylesheet" href="../css/design-system.css?v=2">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">Carolina Vilela</a>
+    <div class="nav-links">
+      <a href="../index.html#work" class="active">Work</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header class="case-header">
+    <div class="case-meta-row">
+      <div class="case-meta-item">
+        <span class="t-label">Year</span>
+        <span class="t-meta">2025</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="t-label">Role</span>
+        <span class="t-meta">Lead product designer</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="t-label">Impact</span>
+        <span class="t-accent">28s → 12s batch time</span>
+      </div>
+    </div>
+    <div class="project-tags" style="margin-bottom: var(--sp-4);">
+      <span class="tag">Product design</span>
+      <span class="tag">Operations</span>
+      <span class="tag">Workflow</span>
+    </div>
+    <h1 class="t-section-headline">Batch Printing</h1>
+    <p class="t-body" style="margin-top: var(--sp-3); max-width: 560px;">
+      Redesigning a warehouse print flow so operators complete batches faster with fewer errors.
+    </p>
+  </header>
+
+  <article class="case-body">
+    <h2>Context</h2>
+    <p>
+      Warehouse teams print hundreds of labels per shift. The legacy batch screen stacked
+      actions vertically, hid printer status, and forced operators to confirm the same
+      data twice. Support tickets clustered around “wrong batch” and timeouts.
+    </p>
+
+    <div class="case-metric-callout">
+      <p class="case-metric-number">57%</p>
+      <p class="case-metric-label">Reduction in average batch completion time after launch</p>
+    </div>
+
+    <h2>Problem</h2>
+    <p>
+      Operators lost context when switching between SKU lists and printer queues. Error
+      recovery required leaving the flow. PM and ops wanted a single screen that matched
+      how pickers actually work — scan, confirm, print, next.
+    </p>
+
+    <figure>
+      <div class="project-thumbnail" style="border: none;" aria-label="Case study image placeholder"></div>
+      <figcaption>Before / after flow — replace with your screenshot</figcaption>
+    </figure>
+
+    <h2>Process</h2>
+    <p>
+      Shadowed three shifts, mapped the happy path and failure paths, and ran a clickable
+      prototype with five operators. We prioritized: persistent batch summary, inline printer
+      health, and one-tap reprint for the last job.
+    </p>
+
+    <h2>Solution</h2>
+    <p>
+      Split the UI into a fixed left rail (batch + progress) and a right workspace (line items
+      + actions). Primary CTA stays anchored; destructive actions moved behind a confirm
+      pattern shared with the design system.
+    </p>
+
+    <h2>Outcome</h2>
+    <p>
+      Average batch time dropped from 28s to 12s in the pilot site. Reprint-related tickets
+      fell 34% in the first month. The patterns shipped back into the ops design system as
+      “batch modules” for other tools.
+    </p>
+  </article>
+
+  <footer class="footer">
+    <span class="footer-copy">© 2026 Carolina Vilela</span>
+    <div class="footer-links">
+      <a href="../index.html">← All work</a>
+      <a href="expired-tags-research.html">Next project →</a>
+    </div>
+  </footer>
+
+</body>
+</html>
