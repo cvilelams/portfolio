@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Carolina Vilela</title>
+  <link rel="stylesheet" href="css/design-system.css?v=2">
+  <style>
+    .about-hero { padding: var(--sp-8) var(--sp-6); border-bottom: 1px solid var(--border); }
+    .about-hero .t-body { max-width: 560px; margin-top: var(--sp-4); }
+    .about-content { padding: var(--sp-6); border-bottom: 1px solid var(--border); }
+    .about-content h2 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .about-content h2:first-child { margin-top: 0; }
+    .about-content p {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--ink-muted);
+      margin-bottom: var(--sp-3);
+      max-width: 640px;
+    }
+    .process-list { border-top: 1px solid var(--border); margin-top: var(--sp-4); }
+    .process-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: var(--sp-4);
+      padding: var(--sp-4) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .process-item:last-child { border-bottom: none; }
+    .skills-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-4);
+      margin-top: var(--sp-4);
+    }
+    .skill-block { padding: var(--sp-4); background: var(--surface-2); border: 1px solid var(--border); }
+    .skill-block h3 {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-faint);
+      margin-bottom: var(--sp-2);
+    }
+    .skill-block ul {
+      list-style: none;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--ink-muted);
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Carolina Vilela</a>
+    <div class="nav-links">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header class="about-hero">
+    <span class="t-label">About</span>
+    <h1 class="t-section-headline" style="margin-top: var(--sp-4);">
+      I design products where clarity<br>and measurement matter.
+    </h1>
+    <p class="t-body">
+      Product designer with a systems mindset — from discovery and research through
+      shipped UI and design-system contribution.
+    </p>
+  </header>
+
+  <main class="about-content">
+    <h2>Bio</h2>
+    <p>
+      Over the past several years I've worked on B2B and operations-heavy products where
+      users are under time pressure and errors are costly. I start with the workflow, not
+      the mockup: who acts, what decision they're making, and what success looks like in
+      numbers.
+    </p>
+    <p>
+      I collaborate closely with PMs and engineers — writing specs that hold up in build,
+      facilitating critiques that focus on outcomes, and maintaining component libraries
+      so teams move faster without visual drift.
+    </p>
+
+    <h2>Skills</h2>
+    <div class="skills-detail">
+      <div class="skill-block">
+        <h3>Design</h3>
+        <ul>
+          <li>Product &amp; UX design</li>
+          <li>Design systems &amp; tokens</li>
+          <li>Prototyping (Figma)</li>
+          <li>Information architecture</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <h3>Research &amp; strategy</h3>
+        <ul>
+          <li>User interviews &amp; testing</li>
+          <li>Journey &amp; service mapping</li>
+          <li>Jobs-to-be-done framing</li>
+          <li>Metric definition with PM</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <h3>Collaboration</h3>
+        <ul>
+          <li>Workshop facilitation</li>
+          <li>Stakeholder alignment</li>
+          <li>Design QA &amp; handoff</li>
+          <li>Documentation for eng</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <h3>Tools</h3>
+        <ul>
+          <li>Figma, FigJam</li>
+          <li>Notion, Linear</li>
+          <li>HTML/CSS literacy</li>
+          <li>Analytics (Amplitude, etc.)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>How I work</h2>
+    <div class="process-list">
+      <div class="process-item">
+        <span class="t-label">01</span>
+        <div>
+          <p class="t-exp-role" style="margin-bottom: 8px;">Understand</p>
+          <p class="t-small">Align on problem, users, constraints, and what we'll measure.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="t-label">02</span>
+        <div>
+          <p class="t-exp-role" style="margin-bottom: 8px;">Explore</p>
+          <p class="t-small">Research, flows, and prototypes — test early with real tasks.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="t-label">03</span>
+        <div>
+          <p class="t-exp-role" style="margin-bottom: 8px;">Deliver</p>
+          <p class="t-small">High-fidelity UI, specs, and system updates; partner through launch.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="t-label">04</span>
+        <div>
+          <p class="t-exp-role" style="margin-bottom: 8px;">Learn</p>
+          <p class="t-small">Ship, measure, iterate — document what worked for the next squad.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span class="footer-copy">© 2026 Carolina Vilela</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
