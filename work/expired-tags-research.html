@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expired Tags Research — Carolina Vilela</title>
-  <link rel="stylesheet" href="../css/design-system.css?v=2">
+  <title>Why Weren't Users Deleting Expired Tags? — Carolina Vilela</title>
+  <link rel="stylesheet" href="../css/design-system.css?v=4">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
     <a href="../index.html" class="nav-logo">Carolina Vilela</a>
     <div class="nav-links">
       <a href="../index.html#work" class="active">Work</a>
-      <a href="../about.html">About</a>
+      <a href="../about.html" class="is-temporarily-hidden">About</a>
       <a href="../contact.html">Contact</a>
     </div>
   </nav>
@@ -20,79 +20,202 @@
   <header class="case-header">
     <div class="case-meta-row">
       <div class="case-meta-item">
-        <span class="t-label">Year</span>
-        <span class="t-meta">2024</span>
+        <span class="t-label">Role</span>
+        <span class="t-meta">UX researcher & designer</span>
       </div>
       <div class="case-meta-item">
-        <span class="t-label">Role</span>
-        <span class="t-meta">Research lead · Product design</span>
+        <span class="t-label">Methods</span>
+        <span class="t-meta">Interviews · Contextual inquiry</span>
       </div>
       <div class="case-meta-item">
         <span class="t-label">Impact</span>
-        <span class="t-accent">−40% tickets (pilot)</span>
+        <span class="t-accent">QR deletion shipped</span>
       </div>
     </div>
     <div class="project-tags" style="margin-bottom: var(--sp-4);">
-      <span class="tag">Research</span>
-      <span class="tag">Service design</span>
-      <span class="tag">Ops</span>
+      <span class="tag">UX research</span>
+      <span class="tag">Restaurant tech</span>
+      <span class="tag">B2B SaaS</span>
     </div>
-    <h1 class="t-section-headline">Expired Tags Research</h1>
+    <h1 class="t-section-headline">Why Weren't Users Deleting Expired Tags?</h1>
     <p class="t-body" style="margin-top: var(--sp-3); max-width: 560px;">
-      A discovery sprint to understand why expired shelf tags kept breaking downstream workflows.
+      Qualitative research that uncovered a behavioral conflict between physical workflows
+      and digital tooling — and directly shaped product roadmap decisions.
     </p>
   </header>
 
+  <figure class="case-hero-media">
+    <div class="project-thumbnail" style="border: none;" aria-label="Hero image placeholder"></div>
+    <figcaption>Monitoring feature in Foodcamp — replace with product screenshot or research artifact</figcaption>
+  </figure>
+
   <article class="case-body">
-    <h2>Context</h2>
-    <p>
-      Stores reported recurring issues when tags expired before replenishment — leading to
-      mis-picks, write-offs, and heavy support load. Leadership asked for root causes before
-      funding a full build.
-    </p>
 
-    <h2>Problem</h2>
-    <p>
-      Symptoms were visible in tickets, but causes were fragmented across POS, back-office,
-      and manual overrides. No shared definition of “expired” existed between store and HQ teams.
-    </p>
+    <section class="case-section">
+      <div class="case-section-label">Context</div>
+      <h2 class="case-section-title">A critical feature with near-zero adoption</h2>
+      <p>
+        Our restaurant management platform included a Monitoring Feature designed to help staff
+        comply with health regulations by tracking and deleting expired food tags. On paper, it
+        was a key product differentiator. In practice, our data showed almost no one was using it.
+      </p>
+      <p class="case-role-line">
+        My role: UX researcher and designer. I led a qualitative study to understand why users
+        were abandoning the feature, what alternative behaviors had replaced it, and what would
+        need to change to make it genuinely useful.
+      </p>
+    </section>
 
-    <h2>Process</h2>
-    <p>
-      Twelve stakeholder interviews, store visits, and support log clustering. We built a
-      service blueprint and tested three intervention hypotheses with paper prototypes and
-      task scenarios.
-    </p>
+    <section class="case-section">
+      <div class="case-section-label">The problem</div>
+      <h2 class="case-section-title">Users weren't ignoring the feature — they'd built their own system</h2>
+      <p>
+        Instead of using the Monitoring Feature, restaurant staff had developed a manual routine
+        called "Bater Praça" — a daily physical walkthrough of every workstation to check and
+        discard expired tags by hand. It was fast, familiar, and required no software.
+      </p>
 
-    <figure>
-      <div class="project-thumbnail" style="border: none;" aria-label="Research artifact placeholder"></div>
-      <figcaption>Journey map excerpt — replace with your artifact</figcaption>
-    </figure>
+      <div class="case-cards case-cards--2">
+        <div class="case-card case-card--accent">
+          <p class="case-card__text">
+            Staff relied on physical walkthroughs of workstations instead of the digital tool — a
+            habit so ingrained it had a name.
+          </p>
+        </div>
+        <div class="case-card case-card--accent">
+          <p class="case-card__text">
+            Some users reprinted tags for food they considered still "good," bypassing expiration
+            logic entirely.
+          </p>
+        </div>
+      </div>
 
-    <h2>Solution</h2>
-    <p>
-      Recommended a phased roadmap: (1) clearer expiry states in the tag UI, (2) automated
-      alerts tied to inventory rules, (3) manager override audit trail. Design paired each
-      phase with measurable ticket and shrink KPIs.
-    </p>
+      <p>
+        This created a real business risk: if users didn't see value in the Monitoring Feature,
+        one of the product's main differentiators was effectively invisible.
+      </p>
+    </section>
 
-    <div class="case-metric-callout">
-      <p class="case-metric-number">40%</p>
-      <p class="case-metric-label">Fewer expired-tag support tickets in pilot stores (90 days)</p>
-    </div>
+    <section class="case-section">
+      <div class="case-section-label">Research approach</div>
+      <h2 class="case-section-title">Qualitative research across three user segments</h2>
+      <p>
+        Since the problem was rooted in behavioral habits rather than usability alone, I used a
+        qualitative approach: stakeholder interviews to align on business assumptions, user
+        interviews and contextual inquiry to observe real workflows, usability testing to
+        identify friction in task completion, and thematic analysis to surface patterns.
+      </p>
+      <p>I recruited five restaurant employees across three groups:</p>
 
-    <h2>Outcome</h2>
-    <p>
-      Phase 1 shipped to 20 pilot locations. Product org adopted the research template for
-      other ops investigations. Full build prioritized on the next planning cycle.
-    </p>
+      <div class="case-cards case-cards--segments">
+        <div class="case-card">
+          <h3 class="case-card__title">Never used the feature</h3>
+          <p class="case-card__text">1 participant — unaware of its existence or saw no need for it.</p>
+        </div>
+        <div class="case-card">
+          <h3 class="case-card__title">Tried it and stopped</h3>
+          <p class="case-card__text">2 participants — encountered friction or reverted to manual routines.</p>
+        </div>
+        <div class="case-card">
+          <h3 class="case-card__title">Active users</h3>
+          <p class="case-card__text">2 participants — used the feature regularly but still faced minor usability challenges.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-label">Findings</div>
+      <h2 class="case-section-title">Four behavioral profiles, one core tension</h2>
+      <p>
+        Analysis identified four distinct user groups based on their relationship with the
+        feature and their expiration management habits:
+      </p>
+
+      <div class="case-cards case-cards--2x2">
+        <div class="case-card">
+          <h3 class="case-card__title">Unaware</h3>
+          <p class="case-card__text">Had no knowledge of the feature. Relied entirely on Bater Praça.</p>
+        </div>
+        <div class="case-card">
+          <h3 class="case-card__title">Disengaged</h3>
+          <p class="case-card__text">Tried the feature but found it slower than their physical routine. Some reprinted tags to avoid discarding food.</p>
+        </div>
+        <div class="case-card">
+          <h3 class="case-card__title">Inconsistent</h3>
+          <p class="case-card__text">Used the feature occasionally but forgot about it — no reinforcement, unclear instructions.</p>
+        </div>
+        <div class="case-card">
+          <h3 class="case-card__title">Habitual</h3>
+          <p class="case-card__text">Understood the value and built a routine around it. Still encountered friction in the deletion flow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-label">Key insight</div>
+      <h2 class="case-section-title">The conflict between manual and digital tracking</h2>
+
+      <div class="case-card">
+        <p class="case-card__lead">
+          Bater Praça was localized and immediate. The Monitoring Feature asked users to do more
+          work for the same outcome — at a workstation level they already trusted.
+        </p>
+        <p class="case-card__text">
+          Tracking every tag from every station inside the software felt redundant and
+          time-consuming when staff already had a fast, embodied routine in place. The feature
+          wasn't solving a problem users felt they had.
+        </p>
+      </div>
+
+      <p>
+        The barrier wasn't discoverability or UI — it was a fundamental mismatch between the
+        product's mental model and users' real-world workflows. Any redesign would need to fit
+        into Bater Praça rather than replace it.
+      </p>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-label">Impact</div>
+      <h2 class="case-section-title">Research directly shaped roadmap decisions</h2>
+      <p>
+        Findings were presented to stakeholders and moved the conversation from "why isn't this
+        feature being used?" to "how do we make this feature fit how users actually work?"
+      </p>
+
+      <div class="case-impact-card">
+        <div class="case-impact-card__icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+            <rect x="14" y="14" width="3" height="3"/>
+            <path d="M21 14h-3v3"/>
+            <path d="M14 21h3v-3"/>
+            <path d="M21 21h.01"/>
+          </svg>
+        </div>
+        <div>
+          <p class="case-impact-card__title">QR code deletion — shipped</p>
+          <p class="case-impact-card__text">
+            A direct outcome of this research: the team prioritized a QR code scan flow that let
+            staff discard expired tags during their physical walkthrough, without switching contexts
+            or navigating the software. The solution was implemented.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <blockquote class="case-quote">
+      <p>Users don't resist features — they resist workflows that don't match their reality. The most effective solution wasn't a better interface. It was meeting users at the moment their existing habit was already happening.</p>
+    </blockquote>
+
   </article>
 
   <footer class="footer">
     <span class="footer-copy">© 2026 Carolina Vilela</span>
     <div class="footer-links">
       <a href="batch-printing.html">← Previous</a>
-      <a href="../index.html">All work</a>
+      <a href="entalhe-em-madeira.html">Next project →</a>
     </div>
   </footer>
 

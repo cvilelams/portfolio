@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Batch Printing — Carolina Vilela</title>
-  <link rel="stylesheet" href="../css/design-system.css?v=2">
+  <link rel="stylesheet" href="../css/design-system.css?v=3">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
     <a href="../index.html" class="nav-logo">Carolina Vilela</a>
     <div class="nav-links">
       <a href="../index.html#work" class="active">Work</a>
-      <a href="../about.html">About</a>
+      <a href="../about.html" class="is-temporarily-hidden">About</a>
       <a href="../contact.html">Contact</a>
     </div>
   </nav>
@@ -20,73 +20,154 @@
   <header class="case-header">
     <div class="case-meta-row">
       <div class="case-meta-item">
-        <span class="t-label">Year</span>
-        <span class="t-meta">2025</span>
+        <span class="t-label">Timeline</span>
+        <span class="t-meta">3 weeks</span>
       </div>
       <div class="case-meta-item">
         <span class="t-label">Role</span>
-        <span class="t-meta">Lead product designer</span>
+        <span class="t-meta">UX designer & researcher</span>
       </div>
       <div class="case-meta-item">
         <span class="t-label">Impact</span>
-        <span class="t-accent">28s → 12s batch time</span>
+        <span class="t-accent">28s → 12s · 52%</span>
       </div>
     </div>
     <div class="project-tags" style="margin-bottom: var(--sp-4);">
       <span class="tag">Product design</span>
-      <span class="tag">Operations</span>
-      <span class="tag">Workflow</span>
+      <span class="tag">UX research</span>
+      <span class="tag">Food service</span>
     </div>
     <h1 class="t-section-headline">Batch Printing</h1>
     <p class="t-body" style="margin-top: var(--sp-3); max-width: 560px;">
-      Redesigning a warehouse print flow so operators complete batches faster with fewer errors.
+      How we reduced the time to print 5+ product tags from 28s to 12s — a 52% decrease.
     </p>
   </header>
 
+  <figure class="case-hero-media">
+    <div class="project-thumbnail" style="border: none;" aria-label="Hero image placeholder"></div>
+    <figcaption>Foodcamp on a kitchen tablet — replace with product hero screenshot</figcaption>
+  </figure>
+
   <article class="case-body">
-    <h2>Context</h2>
+    <h2>Overview</h2>
     <p>
-      Warehouse teams print hundreds of labels per shift. The legacy batch screen stacked
-      actions vertically, hid printer status, and forced operators to confirm the same
-      data twice. Support tickets clustered around “wrong batch” and timeouts.
+      Foodcamp is a web application that helps restaurant kitchens manage product expiration
+      dates through automated tag printing. Before this feature, users could only print one
+      tag at a time — a friction point that accumulated fast in a high-paced kitchen environment.
+    </p>
+    <p class="case-role-line">
+      My role: UX designer and researcher, working alongside one designer, a UI designer,
+      the CTO, CPO, and development team.
     </p>
 
-    <div class="case-metric-callout">
-      <p class="case-metric-number">57%</p>
-      <p class="case-metric-label">Reduction in average batch completion time after launch</p>
-    </div>
-
-    <h2>Problem</h2>
+    <h2>The Problem</h2>
     <p>
-      Operators lost context when switching between SKU lists and printer queues. Error
-      recovery required leaving the flow. PM and ops wanted a single screen that matched
-      how pickers actually work — scan, confirm, print, next.
+      Printing 5 or more tags meant repeating the same flow 5+ times. For kitchen staff
+      working under time pressure, this wasn't just inconvenient — it was a daily bottleneck.
     </p>
 
     <figure>
-      <div class="project-thumbnail" style="border: none;" aria-label="Case study image placeholder"></div>
-      <figcaption>Before / after flow — replace with your screenshot</figcaption>
+      <div class="project-thumbnail" style="border: none;" aria-label="Before state placeholder"></div>
+      <figcaption>Single-tag flow repeated per product — replace with before screenshot or flow diagram</figcaption>
     </figure>
 
-    <h2>Process</h2>
+    <h2>Discovery</h2>
     <p>
-      Shadowed three shifts, mapped the happy path and failure paths, and ran a clickable
-      prototype with five operators. We prioritized: persistent batch summary, inline printer
-      health, and one-tap reprint for the last job.
+      We structured discovery in two phases: business and product.
     </p>
+
+    <h3>Business phase</h3>
+    <p>
+      We ran benchmarking and stakeholder interviews with the CEO, operations, and commercial
+      teams. The goal was clear: reduce printing time. But no one had a concrete direction for how.
+    </p>
+
+    <h3>Product phase</h3>
+    <p>
+      That answer came from users. We visited restaurants and interviewed kitchen staff
+      directly, observing their environment, their pace, and their words. Two things happened
+      during those sessions that shaped everything.
+    </p>
+
+    <figure>
+      <div class="project-thumbnail" style="border: none;" aria-label="Field research placeholder"></div>
+      <figcaption>Restaurant visit or observation notes — replace with photo or research artifact</figcaption>
+    </figure>
+
+    <p>
+      Users instinctively tried to multi-select products by long-pressing — the same way they'd
+      select photos on a phone. That pattern confirmed the mental model, but it would have
+      been costly to implement.
+    </p>
+
+    <figure>
+      <div class="project-thumbnail" style="border: none;" aria-label="Multi-select insight placeholder"></div>
+      <figcaption>Long-press multi-select pattern users tried — replace with sketch or wireframe</figcaption>
+    </figure>
+
+    <blockquote class="case-quote">
+      <p>"You already group products into Groups. Why can't I just print the whole group at once?"</p>
+      <cite>— Kitchen staff, field interview</cite>
+    </blockquote>
+
+    <p>That was our answer.</p>
 
     <h2>Solution</h2>
     <p>
-      Split the UI into a fixed left rail (batch + progress) and a right workspace (line items
-      + actions). Primary CTA stays anchored; destructive actions moved behind a confirm
-      pattern shared with the design system.
+      Foodcamp already had a product grouping structure. Batch Printing let users print an
+      entire group in a single action, fitting naturally into an existing mental model rather
+      than introducing a new one.
     </p>
 
-    <h2>Outcome</h2>
+    <figure>
+      <div class="project-thumbnail" style="border: none;" aria-label="Solution UI placeholder"></div>
+      <figcaption>Batch print on tablet — replace with hi-fi prototype screenshot</figcaption>
+    </figure>
+
     <p>
-      Average batch time dropped from 28s to 12s in the pilot site. Reprint-related tickets
-      fell 34% in the first month. The patterns shipped back into the ops design system as
-      “batch modules” for other tools.
+      We moved quickly from lo-fi sketches to a high-fidelity prototype, ran usability tests
+      with kitchen staff, and iterated based on two friction points they flagged: the Batch
+      Print button was hard to find, and adding extra tag information wasn't intuitive.
+      Given our timeline, we made a deliberate call to ship and monitor rather than delay.
+    </p>
+
+    <figure>
+      <div class="project-thumbnail" style="border: none;" aria-label="Iteration placeholder"></div>
+      <figcaption>Usability test iterations — replace with before/after of button placement and tag info flow</figcaption>
+    </figure>
+
+    <p>
+      The feature was built for tablets — the primary device used in kitchen environments.
+    </p>
+
+    <h2>Results</h2>
+
+    <div class="case-metric-callout">
+      <p class="case-metric-number">52%</p>
+      <p class="case-metric-label">Reduction in time to print 5+ tags — measured post-launch via Hotjar and Google Analytics</p>
+    </div>
+
+    <p>
+      After launch, we measured behavior through Hotjar and Google Analytics. The 52% time
+      reduction held. However, adoption was lower than expected. Most users continued using
+      the single-tag path.
+    </p>
+
+    <figure>
+      <div class="project-thumbnail" style="border: none;" aria-label="Analytics placeholder"></div>
+      <figcaption>Usage data — replace with analytics chart showing time reduction vs. adoption gap</figcaption>
+    </figure>
+
+    <p>
+      The diagnosis: the new path wasn't visible enough. The feature existed, but discovery
+      was a problem. An improvement was identified but not prioritized at the time.
+    </p>
+
+    <h2>What I'd Do Differently</h2>
+    <p>
+      Usability testing validated the concept, but not the findability. I'd push for at least
+      one additional test focused specifically on navigation and discoverability before shipping,
+      or design an onboarding trigger to surface the feature to existing users post-launch.
     </p>
   </article>
 
