@@ -431,6 +431,11 @@ button {
   transform-origin: 32% 50%;
 }
 
+.project-card .project-thumbnail--contain img {
+  object-fit: contain;
+  inset: 16px;
+}
+
 .project-thumbnail--portrait {
   aspect-ratio: auto;
   max-width: 360px;
