@@ -449,6 +449,19 @@ button {
   object-fit: contain;
 }
 
+.project-thumbnail--field-photo {
+  aspect-ratio: auto;
+  max-width: 240px;
+  margin: var(--sp-4) auto;
+  background: transparent;
+}
+
+.project-thumbnail--field-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .project-body {
   padding: 28px var(--sp-4) var(--sp-4);
 }
@@ -1134,6 +1147,12 @@ button {
   .case-body figure {
     margin-left: calc(-1 * var(--sp-4));
     margin-right: calc(-1 * var(--sp-4));
+  }
+
+  .project-thumbnail--field-photo {
+    max-width: 180px;
+    margin-top: var(--sp-3);
+    margin-bottom: var(--sp-3);
   }
 
   .case-metric-number {
